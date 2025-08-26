@@ -18,7 +18,7 @@ async def update_bot_status(status: str):
     print(status)
     if "online" in status:
         statusDiscord = discord.Status.online
-    elif status == "offline":
+    elif "offline" in status:
         statusDiscord = discord.Status.dnd
     else:
         print("Probably starting...")
